@@ -16,22 +16,6 @@ typedef struct _image {
     unsigned int altura;
 } Imagem;
 
-
-int max(int a, int b) {
-    if (a > b)
-        return a;
-    return b;
-}
-
-int pixel_igual(Pixel p1, Pixel p2) {
-    if (p1.r == p2.r &&
-        p1.g == p2.g &&
-        p1.b == p2.b)
-        return 1;
-    return 0;
-}
-
-
 Imagem escalaCinza(Imagem img) {
     for (unsigned int i = 0; i < img.altura; ++i) {
         for (unsigned int j = 0; j < img.largura; ++j) {
